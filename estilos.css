@@ -1,0 +1,137 @@
+
+h1{
+      color:red; 
+      font-size:50px; 
+      font-family:verdana; 
+      text-align:center; 
+      border:3px solid Tomato;
+      padding: 15px;
+      margin: 30px;
+      line-height: 1,5;
+      text-shadow: 2px 2px 2px #2e2e2d;     
+}
+
+h2{
+      color:darkred; 
+      font-size:50px; 
+      font-family:Verdana, Geneva, Tahoma, sans-serif; 
+      text-align:center; 
+      border:3px solid Tomato;
+      padding: 15px;
+      margin: 10px;
+      line-height: 1,5;
+      text-shadow: 3px 3px 3px #2e2e2d;
+}
+
+h3{
+      color:black; 
+      font-size:23px; 
+      font-family:Tahoma, Verdana, Geneva, sans-serif; 
+      text-align:center; 
+      padding: 15px;
+      margin: 2px;
+      line-height: 1,5;
+      text-shadow: 2px 2px 2px #2e2e2d;
+}
+
+h4{
+      color:black; 
+      font-size:30px; 
+      font-family:Tahoma, Verdana, Geneva, sans-serif; 
+      text-align:center; 
+      padding: 15px;
+      margin: 2px;
+      line-height: 0;
+      text-shadow: 3px 3px 3px #2e2e2d;
+ }
+
+body{
+      background-color: rgb(243, 188, 117) ;
+      text-align: center;
+}
+
+p{
+      line-height: 1;
+      font-size:20px; 
+      font-family:Tahoma, Verdana, Geneva, sans-serif;
+      text-align:center; 
+      padding: 10px;
+      margin: 2px;
+      color:midnightblue; 
+}
+
+/* Crea tres columnas que flotan una al lado de la otra */
+* {
+      box-sizing: border-box;
+    }
+
+/* label */
+.column {
+      float: left;
+      width: 33.33%;
+      padding: 5px;
+/**      height: 300px; */
+    }
+    
+/* Clear floats after the columns */
+.row:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+    
+    /* Columnas Responsivas */
+    @media screen and (max-width: 600px) {
+      .column {
+        width: 100%;
+        display: block;
+        margin-bottom: 20px;
+      }
+    }
+    
+    /* Estilo de las tarjetas */
+    .card {
+      border: 1px solid;
+      box-shadow: 5px 10px 18px red;
+      padding: 10px;
+      text-align: center;
+      background-color: rgb(197, 60, 60);
+    }
+    
+    /* FORMULARIO DE CONTACTO */
+    /* Entradas de estilo con tipo = "texto", seleccione elementos y áreas de texto */
+      input[type=text], select, textarea {
+      width: 100%; /* Full width */
+      padding: 10px; /* algo de relleno */ 
+      border: 1px solid darkgray; /* Borde Darkgray */
+      border-radius: 12px; /* Bordes redondeados */
+      box-sizing: border-box; /* Make sure that padding and width stays in place */
+      margin-top: 2px; /* Add a top margin */
+      margin-bottom: 14px; /* Bottom margin */
+      resize: vertical /* Permite cambiar el tamaño verticalmente el área de texto (no horizontalmente) */
+    }
+    
+    /* Da estilo al botón de Enviar con un color de fondo específico, etc. */
+    input[type=submit] {
+      background-color: rgb(243, 188, 117);
+      color: black;
+      padding: 6px 10px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    
+    /* Al mover el mouse sobre el botón Enviar, agrega un color verde más oscuro */
+    input[type=submit]:hover {
+      background-color: #45a049;
+    }
+    
+    /* Agrega un color de fondo y algo de relleno alrededor del formulario */
+    .container {
+      border-radius: 5px;
+      background-color: rgb(243, 188, 117);
+      padding: 5px;
+    }
+
+
+
